@@ -53,7 +53,7 @@ export async function downloadRawVideo(fileName: string) {
     .bucket(rawVideoBucketName)
     .file(fileName)
     .download({
-      destination: `${localProcessedVideoPath}/${fileName}`,
+      destination: `${localRawVideoPath}/${fileName}`,
     });
   console.log(
     `gs://${rawVideoBucketName}/${fileName} downloaded to ${localRawVideoPath}/${fileName}.`
