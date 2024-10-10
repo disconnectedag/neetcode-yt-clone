@@ -8,12 +8,13 @@ import {
 } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyB7Y-3R03DrvjhaewcVdkI_PCeK7wtJriE',
-  authDomain: 'ag-yt-clone.firebaseapp.com',
-  projectId: 'ag-yt-clone',
-  storageBucket: 'ag-yt-clone.appspot.com',
-  messagingSenderId: '665475765069',
-  appId: '1:665475765069:web:1d2fde5284c5d26fb55d04',
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId:
+    process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
 };
 
 // Initialize Firebase
